@@ -3,5 +3,21 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "include": [
+    "src/**/*",
+    "types/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts"
+    // Asegúrate de que tu directorio de hooks no esté aquí
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
+  }
 }
